@@ -14,6 +14,15 @@ The issue is that when adding this package to a client project in Xcode, the
 dependency rule will pin `9.0.0` as the current major version. **This is
 unexpected as the latest version is `10.0.0`.**
 
-This was reproduced with a clean SPM cache 
+<p align="center">
+  <img 
+    width="750" 
+    align="center"
+    alt="Screenshot of issue." 
+    src="https://user-images.githubusercontent.com/36927374/218178647-5147de27-71ed-4cf4-9d19-a913ff097c12.png"
+  >
+</p>
+
+_Note: This was reproduced with a clean SPM cache 
 (`~/Library/Caches/org.swift.swiftpm/repositories`) in both Xcode 13.3.1 and
-Xcode 14.2.
+Xcode 14.2._
